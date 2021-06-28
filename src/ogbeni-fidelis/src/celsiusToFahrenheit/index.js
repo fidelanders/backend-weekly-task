@@ -6,10 +6,10 @@ function convertToFahrenheit (celsius) {
     let fahrenheit = celsius * (9 / 5) + 32;
     return fahrenheit;
 }
-convertToFahrenheit(-30) // -> -22
-convertToFahrenheit(-10) // -> 14
-let newline = "\r\n"
-let result = convertToFahrenheit(-30)
-result += newline
-result += convertToFahrenheit(-10)
-alert(result);
+
+let display ={
+    newline:"\r\n",
+result1: convertToFahrenheit(-30),
+result2:convertToFahrenheit(-10)
+}
+alert(`${display.result1}, ${display.newline},${display.result2}`);
